@@ -18,7 +18,7 @@ const Font ={
 const Home = () => 
 <div style={Background}>
     <br></br>
-   <h1 style={Font}> Van Goghs Dough - Need to PhotoShop this pic </h1>
+   <h1 style={Font}> Van Goghs Dough</h1>
 </div>
    
 
