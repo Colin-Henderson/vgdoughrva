@@ -30,23 +30,27 @@ const Request = () =>
         <form method="POST" action="send">
           <p>
             <label>Name</label>
-            <input type="text" name="name"></input>
+            <input type="text" name="name" placeholder="Vince"></input>
           </p>
           <p>
-            <label>Company</label>
-            <input type="text" name="company"></input>
+            <label>Date/Time Needed (24 hour notice)</label>
+            <input type="text" name="company" placeholder="ex: 4pm Tue May 1st"></input>
           </p>
           <p>
             <label>Email Address</label>
-            <input type="email" name="email"></input>
+            <input type="email" name="email" placeholder="hungry@gmail.com"></input>
           </p>
           <p>
             <label>Phone Number</label>
-            <input type="text" name="phone"></input>
+            <input type="text" name="phone" placeholder="804.837.3946"></input>
+          </p>
+          <p class="full">
+            <label>Delivery Address</label>
+            <textarea name="Address" rows="2" placeholder="1800 N Boulevard, Richmond VA 23221"></textarea>
           </p>
           <p class="full">
             <label>Message</label>
-            <textarea name="message" rows="5"></textarea>
+            <textarea name="message" rows="5" placeholder="Really looking for a pizza that looks like charlie chaplin using olives, onions, mushrooms and spinach. Thin crust if you can and would like to get 2 of them. Red sauce and mozzarella cheese as well."></textarea>
           </p>
           <p class="full">
             <button type="submit">Submit</button>
