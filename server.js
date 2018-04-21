@@ -7,7 +7,7 @@ const PORT = process.env.PORT || 3001;
 
 const app = express();
 
-mongoose.connect("mongodb://localhost:27017/vgd");
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost:27017/vgd");
 
 if (process.env.NODE_ENV === "production") {
     app.use(express.static("client/build"));
