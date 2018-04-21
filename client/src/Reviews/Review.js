@@ -112,12 +112,10 @@ class Reviews extends Component {
               <List>
                 {this.state.reviews.map(review => (
                   <ListItem key={review._id}>
-                    <Link to={"/reviews/" + review._id}>
+                    {/* <Link to={"/reviews/" + review._id}> */}
                       <strong>{review.stars} ⭐'s </strong>
                       <p style={{fontStyle: "italic"}}> "{review.comments}" - <strong> {review.name}</strong>
                       </p>
-                      
-                    </Link>
                     <DeleteBtn onClick={() => this.deleteReview(review._id)} />
                   </ListItem>
                 ))}

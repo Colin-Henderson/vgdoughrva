@@ -10,28 +10,29 @@ const Background ={
     backgroundSize: "cover"
   };
 
-// const Font ={
-//     color: "white",
-//     textAlign: "center"
-// };
+const Font ={
+    color: "white",
+    textAlign: "center",
+    textShadow: "2px 2px black"
+};
 
 
 const Home = (props) => 
 <div style={Background}>
-    <br></br>
+    <br></br><br></br><br></br>
    {/* <h1 style={Font}> Van Goghs Dough</h1> */}
    <div>
-         <Jumbotron fluid style={{opacity: "50%"}}>
-           <Container fluid>
-             <h1 className="display-3">Welcome. </h1>
-             <p className="lead">Van Gogh's Dough. Custom Pizzas, On-Demand.</p>
-             <p> 1. Choose Design & toppings</p>
-             <p> 2. Choose When & Where</p>
-             <p> 3. Hit Request</p>             
-             <p> 4. Pizza Delivered</p>  
-             <p> 5. Leave us a review (unless its bad) & Share with Friends</p>                      
+         {/* <Jumbotron fluid style={{opacity: "50%"}}> */}
+           <Container>
+             <h1 className="display-3" style={Font}>Welcome. </h1>
+             <h2 style={Font}>Van Gogh's Dough. Custom Pizzas, On-Demand.</h2>
+             <h3 style={Font}> 1. Choose Design & toppings</h3>
+             <h3 style={Font}> 2. Choose When & Where</h3>
+             <h3 style={Font}> 3. Hit Request</h3>             
+             <h3 style={Font}> 4. Pizza Delivered</h3>  
+             <h3 style={Font}> 5. Leave us a review (unless its bad) & Share with Friends</h3>                      
            </Container>
-         </Jumbotron>
+         {/* </Jumbotron> */}
        </div>
 </div>   
 
